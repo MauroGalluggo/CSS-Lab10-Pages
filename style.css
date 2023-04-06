@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.page-wrapper {
+    display: grid;
+    width: 100%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+
+
+    /* you can also utilize two properties, row gap and colums gap */
+    row-gap: 200px;
+    column-gap: 100px;
+
+
+
+
+    justify-self: center;
+    align-items: center;
+    padding: 20px;
+    width: 70%;
+}
+
+/* FLEX TO STYLE ALBUM CARDS */
+.album-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.album-card:hover {
+    transform: translateY(-10px);
+}
+
+.album-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.album-card h2 {
+    font-size: 1.2rem;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.album-card p {
+    font-size: 1rem;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.album-card button {
+    background-color: #00a0df;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.album-card button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.album-card button a:visited {
+    text-decoration: none;
+    color: #fff;
+}
+
+.album-card button:hover {
+    background-color: #0092c6;
+}
